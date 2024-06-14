@@ -138,6 +138,23 @@ body {
     background-color: #A9B388;
     height: 500px;
   }
+  .tambah {
+    margin-top: 20px;
+    padding: 1px;
+}
+.tambah a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+  .tambah h5 {
+    inline-size: 15%;
+    padding: 10px 20px;
+    background-color: #265073;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px; 
+}
   
   .kalender {
     padding-top: 20px;

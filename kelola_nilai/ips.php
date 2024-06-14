@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style_10.css" />
+    <link rel="stylesheet" href="../css/mapel.css" />
 </head>
 
 <body>
@@ -45,7 +45,10 @@
         <div class="col-md-9">
             <div class="container">
                 <nav class="navbar">
-                    <h5>Halaman Rekap presensi</h5>
+                    <div id="indikator">
+                        <a href="mapelkls1.php" class="bi bi-arrow-left"></a>
+                        <h5>IPS</h5>
+                    </div>
                     <ul>
                         <li>Admin |</li>
                         <li>Widia Nurindri</li>
@@ -57,22 +60,47 @@
                 </nav>
                 <hr />
                 <div class="box">
-                    <a href="rekapperbulan.php">Rekap Bulan Januari 2024</a>
-                </div>
-                <div class="box">
-                    <a href="rekapperbulan.php">Rekap Bulan Februari 2024</a>
-                </div>
-                <div class="box">
-                    <a href="rekapperbulan.php">Rekap Bulan Maret 2024</a>
-                </div>
-                <div class="box">
-                    <a href="rekapperbulan.php">Rekap Bulan April 2024</a>
-                </div>
-                <div class="box">
-                    <a href="rekapperbulan.php">Rekap Bulan Mei 2024</a>
-                </div>
-                <div class="box">
-                    <a href="rekapperbulan.php">Rekap Bulan Juni 2024</a>
+                    <div class="container">
+                        <div class="tambah">
+                            <a href="../kelola_nilai/inputnilaiips.php">
+                                <h5 class="bi bi-plus-square-fill" style="margin: 10px">
+                                    Input Nilai
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="tabel">
+                            <table>
+                                <tr>
+                                    <th>No</th>
+                                    <th>NISN</th>
+                                    <th>Nama</th>
+                                    <th>Mata Pelajaran</th>
+                                    <th>Nilai Akhir</th>
+                                </tr>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>011</td>
+                                    <td>Widia N</td>
+                                    <td>IPS</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>013</td>
+                                    <td>Della D</td>
+                                    <td>IPS</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>014</td>
+                                    <td>M Ihsan</td>
+                                    <td>IPS</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -139,32 +139,29 @@ body {
     height: 500px;
   }
   
-  .kalender {
-    padding-top: 20px;
-    float: right;
-    margin: 10px 20px;
+  .tambah {
+    margin-top: 20px;
+    padding: 1px;
+    display: flex;
   }
-  .action-presensi {
-    width: 35px;
-    height: 35px;
-    margin: 1px;
-    font-weight: bold;
-    background-color: white;
-    border: 1px solid rgb(226, 226, 226);
-    cursor: pointer;
+  
+  .tambah a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .tambah h5 {
+    inline-size: 90%;
+    padding: 10px 20px;
+    background-color: #265073;
+    text-align: center;
+    margin-top: 20px;
     border-radius: 5px;
   }
-  #buttonS.clicked {
-    background-color: #D6D46D;
-  }
-  #buttonI.clicked {
-    background-color: #90D26D;
-  }
-  #buttonA.clicked {
-    background-color: #da3333;
-  }
-  #buttonH.clicked {
-    background-color: #3973a3;
+  .tambah h5:hover {
+    background-color: #1b3a53;
+    
   }
   #rekap h5{
     background-color: #D6D46D;
@@ -198,20 +195,64 @@ body {
     color: black;
   }
   
+  .dropbtn {
+    background-color: #FEFAE0;
+    padding: 7px 30px;
+    margin: 20px 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FEFAE0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a { 
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1edd5}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #f1edd5;
+  }
+  
+  .input {
+    background-color: #1b3a53;
+  }
+  
   #hapus {
     background-color: #9A4444;
     padding: 1px 3px;
     border-radius: 3px;
   }
-  
   #edit {
     background-color: #D6D46D;
     padding: 2px 3px;
-    border-radius: 3px;
-  }
-  #view {
-    background-color: #90D26D;
-    padding: 1px 3px;
     border-radius: 3px;
   }
   
@@ -221,17 +262,7 @@ body {
     background-color: #90D26D;
     color: white;
   }
-  .simpan button{
-    font-weight: bold;
-    background-color: #90D26D;
-    padding: 7px 30px; 
-    border:none; 
-    float:right;
-    border: none;
-  }
-  .simpan button:hover {
-    background-color: #6c9e51;
-  }
+  
   
   .footer {
     background-color: #B99470;
