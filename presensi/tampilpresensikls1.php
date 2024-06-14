@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard User</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <title>SIAKAD SD CILINGGA USER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="gambar/logosd.png" href="gambar/logosd.png">
     <link rel="stylesheet" href="../css/tampilpresensikls1-6.css" />
 </head>
 
@@ -166,35 +170,35 @@
         </div>
     </div>
     <script>
-        document.querySelectorAll('.feat-btn').forEach((item) => {
-            item.addEventListener('click', (event) => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
-            });
+    document.querySelectorAll('.feat-btn').forEach((item) => {
+        item.addEventListener('click', (event) => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
         });
+    });
     </script>
     <script>
-        // Function to handle button click
-        function handleButtonClick(event) {
-            // Get the row of the clicked button
-            let row = event.target.closest('tr');
-            // Remove 'clicked' class from all buttons in the row
-            row.querySelectorAll('.action-presensi').forEach((button) => {
-                button.classList.remove('clicked');
-            });
-            // Add 'clicked' class to the clicked button
-            event.target.classList.add('clicked');
-        }
+    // Function to handle button click
+    function handleButtonClick(event) {
+        // Get the row of the clicked button
+        let row = event.target.closest('tr');
+        // Remove 'clicked' class from all buttons in the row
+        row.querySelectorAll('.action-presensi').forEach((button) => {
+            button.classList.remove('clicked');
+        });
+        // Add 'clicked' class to the clicked button
+        event.target.classList.add('clicked');
+    }
 
-        // Add click event listener to all buttons
-        document.querySelectorAll('.action-presensi').forEach((button) => {
-            button.addEventListener('click', handleButtonClick);
-        });
+    // Add click event listener to all buttons
+    document.querySelectorAll('.action-presensi').forEach((button) => {
+        button.addEventListener('click', handleButtonClick);
+    });
     </script>
     <script>
-        function myFunction() {
-            alert("Presensi Berhasil Di Simpan");
-        }
+    function myFunction() {
+        alert("Presensi Berhasil Di Simpan");
+    }
     </script>
 </body>
 
